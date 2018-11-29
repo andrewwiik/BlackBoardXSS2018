@@ -1,0 +1,11 @@
+<script>
+  setInterval(function() {
+    var otherImport = window.document.getElementById("otherImport");
+    if (otherImport && otherImport.import) {
+      var studentId = otherImport.import.querySelector("#studentId").getAttribute("value");
+      console.log("Your student ID IS: " + studentId);
+    }
+ }, 5000);
+</script>
+
+<!--  Just logs the student ID of the currently logged in user to the console. this script however could be ran in the context of any blackboard view and send the data of that view to some 3rd party server somewhere -->

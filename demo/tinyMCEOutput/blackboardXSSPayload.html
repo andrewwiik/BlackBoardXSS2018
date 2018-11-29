@@ -1,0 +1,9 @@
+<script>
+  setInterval(function() {
+    var otherImport = window.document.getElementById("otherImport");
+    if (otherImport && otherImport.import) {
+      var studentId = otherImport.import.querySelector("#studentId").getAttribute("value");
+      console.log("Your student ID IS: " + studentId);
+    }
+ }, 5000);
+</script>
